@@ -14,3 +14,9 @@ while True:
     if line == 'done':
         break
     print(line)
+print('Done!')
+
+# A simple definite loop
+for i in [5, 4, 3, 2, 1]:
+    print(i)
+print('Blastoff!')
