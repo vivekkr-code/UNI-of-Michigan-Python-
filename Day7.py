@@ -42,3 +42,34 @@ for value in [9, 41, 12, 3, 74, 15]:
     if value > 20:
         print('Large number', value)
 print('After')
+
+# searching using a boolean variable
+found = False
+print('Before', found)
+for value in [9, 41, 12, 3, 74, 15]:
+    if value == 74:
+        found = True
+    print(found, value)
+print('After', found)
+
+found = False
+print('Before', found)
+for value in [23, 43, 12, 3, 74, 15]:
+    if value == 27:
+        found = True
+        break
+    print(found, value)
+print('After', found)
+
+# Smallest value in a list
+smallest = None
+print('Before', smallest)
+for value in [9, 41, 12, 3, 74, 15]:
+    if smallest is None:
+        smallest = value
+    elif value < smallest:
+        smallest = value
+    print(smallest, value)
+print('After', smallest)
+
+################################# End OF CERTIFICATION 1 #########################################
