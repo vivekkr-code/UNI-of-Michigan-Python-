@@ -10,3 +10,11 @@ print(len(fruit))
 fruit = 'apple'
 x = len(fruit)
 print(x)
+
+# Looking through strings
+fruit = 'Apple'
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(index, letter)
+    index = index + 1
