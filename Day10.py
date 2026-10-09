@@ -25,3 +25,10 @@ elif word > 'banana':
     print('Your Word,' + word + ', comes after banana.')
 else:
     print('All right, banana.')
+
+# String Library
+greet = 'Hello Bob'
+zap = greet.lower()
+print(zap)
+print(greet)
+print('Hi There'.lower())
