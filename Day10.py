@@ -14,3 +14,14 @@ fruit = 'Banana'
 
 if 'a' in fruit :
     print ('Found it!')
+
+    #  String Comparision
+word = 'banana'
+if word == 'banana':
+    print('All riight, banana.')
+if word < 'banana':
+    print('Your word, ' + word + ', comes before banana.')
+elif word > 'banana':
+    print('Your Word,' + word + ', comes after banana.')
+else:
+    print('All right, banana.')
