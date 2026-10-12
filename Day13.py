@@ -26,3 +26,10 @@ if num % 2 == 0:
 else:
     print("Odd number")
 
+#  Student marks analysis
+marks = [78, 85, 92, 67, 88]
+
+print("Total:", sum(marks))
+print("Average:", sum(marks) / len(marks))
+print("Highest:", max(marks))
+print("Lowest:", min(marks))
