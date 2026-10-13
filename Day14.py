@@ -8,3 +8,11 @@ for char in text:
         count += 1
 
 print("Total vowels:", count)
+
+# Reverse a String
+text = input("Enter a word: ").lower()
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
