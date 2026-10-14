@@ -20,3 +20,15 @@ for n in numbers:
         second = n
 
 print("Second largest:", second)
+
+# Find common elements in two lists
+a = [1, 2, 3, 4, 5]
+b = [3, 4, 5, 6, 7]
+
+common = []
+
+for n in a:
+    if n in b and n not in common:
+        common.append(n)
+
+print(common)
