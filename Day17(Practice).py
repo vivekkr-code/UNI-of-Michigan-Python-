@@ -57,3 +57,23 @@ result.extend(a[i:])
 result.extend(b[j:])
 
 print(result)
+
+# Binary search
+numbers = [1, 3, 5, 7, 9, 11]
+target = 7
+
+left = 0
+right = len(numbers) - 1
+
+while left <= right:
+    mid = (left + right) // 2
+
+    if numbers[mid] == target:
+        print("Index:", mid)
+        break
+    elif numbers[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+else:
+    print("Not found")
