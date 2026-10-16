@@ -77,3 +77,15 @@ while left <= right:
         right = mid - 1
 else:
     print("Not found")
+
+# Find the longest word in a sentence
+sentence = "Python makes problem solving easier"
+words = sentence.split()
+
+longest = ""
+
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print(longest)
