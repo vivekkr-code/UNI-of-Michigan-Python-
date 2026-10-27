@@ -58,3 +58,20 @@ print(lotto)
 lotto[2]
 print(lotto)
 
+#  How long is a list
+# The len() function takes a list as a parameter and returns the number of elements in the list
+# Actually len() tells us the number of elements of any set or sequence
+greet = 'Hello Bob'
+print(len(greet))
+x = [1, 2, 'joe', 99]
+print(len(x))
+
+#  Using the Range Function
+# The range function returns a list of numbers that range from zero to one less than the parameter
+# We can construct an index loop using for and an integer iterator
+
+print(range(4))
+friends = ['Joseph', 'Glenn', 'Sally' ]
+print(len(friends))
+print(list(range(len(friends))))
+
