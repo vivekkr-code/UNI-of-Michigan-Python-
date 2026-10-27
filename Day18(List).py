@@ -35,6 +35,26 @@ for friend in friends:
     print('Happy New Year:', friend)
 print('Done!')
 
+x = ['Joseph', 'Glenn', 'Sally']
+for x in x:
+    print('Happy New year:', x)
+print('Done!')
 
+# Looking inside Lists
+# Just like strings, we can get at any single element in a list using an index specific in square brackets
+friends = ['Joseph', 'Glenn', 'Sally' ]
+print(friend[1])
 
+#  List are Mutable
+# String are "immutable"- we cannot change the contents of a string - we must make a new string to make any changes
+# Lists are "mutable" - we can change an element of a list using the index operator 
+fruit = 'banana'
+fruit[0] = 'b'
+# error
+x = fruit.lower()
+print(x)
+lotto=[2, 14, 26, 41, 63]
+print(lotto)
+lotto[2]
+print(lotto)
 
