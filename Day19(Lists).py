@@ -130,3 +130,65 @@ print(words)
 # from stephen.merquard@uct.ac.za Sat Jan 5 09:14:16 2008
 # words = line.split()
 # email=words[1]
+
+# The Double split Pattern 1.0
+# words = line.split()
+# email = words[1]
+# piece = email.split('@')
+# stephen.marquard@uct.ac.za
+# ['stephen.marquard', 'uct.ac.za']
+
+# A chuck Video
+
+#  This is the Module 4 included ended after that there is only assignment
+
+#  Now Practice questions on Lists in Python
+#  Find the length of a list
+numbers = [10, 20, 30, 40, 50]
+print(len(numbers))
+
+# Find the Sum of all elements
+numbers = [10,20,30,40,50]
+print(sum(numbers))
+
+#  Add an element to a list
+numbers = [10,20,30]
+numbers.insert(2,30)
+print(numbers)
+
+#  Remove
+numbers = [10,20,30,40,50]
+numbers.remove(30)
+print(numbers)
+
+#  Reverse
+numbers=[1,2,3,4,5]
+numbers.reverse()
+print(numbers)
+
+#  Slightly Better practice questions
+#  Count even numbers in a list
+numbers = [1,2,3,4,5,6]
+count = 0
+for num in numbers:
+    if num%2==0:
+        count+=1
+print(count)
+
+# Search for an element
+numbers = [10,20,30,40]
+target = 30
+if target in numbers:
+    print("found")
+else:
+    print("Not Found")
+
+# find the second-larget distinct number 
+numbers = [10,20,40,40,30]
+unique=sorted(set(numbers))
+print(unique[-2])
+
+# Remove duplicates from a list
+numbers = [1,2,2,3,4,4,5]
+result= list(set(numbers))
+print(sorted(result))
