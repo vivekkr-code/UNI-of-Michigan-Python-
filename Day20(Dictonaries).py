@@ -64,3 +64,49 @@ jjj = { 'chucks' : 1, 'fred' : 42, 'Jan' : 100}
 print(jjj)
 ooo = { }
 print(ooo)
+
+
+#  Some practice question on this topic
+#  Basic 
+#  Create and access a dictionary
+student = {
+    "name": "vivek",
+    "age": "18",
+    "branch": "CSE"
+}
+print(student)
+print(student["name"])
+print(student["age"])
+
+# Add and update items
+student = {"name":"Aman","age":19}
+student["city"] = "Delhi"
+student["age"] = "19"
+print(student)
+
+# Use dictionary Methods
+student = {"name": "Riya", "age":19, "marks":87}
+print(student.keys())
+print(student.values())
+print(student.items())
+print(student.get("name"))
+
+student.pop("age")
+print(student)
+
+# Loop through a dictionary
+marks = {
+    "Maths":90,
+    "Python":82,
+    "English":79
+}
+for subject, score in marks.items():
+    print(subject, ":", score)
+
+#  Logic Building codes
+#  Count CHaracter frequency
+text = "banana"
+frequency = {}
+for char in text:
+    frequency[char] = frequency.get(char, 0) + 1
+print(frequency)
