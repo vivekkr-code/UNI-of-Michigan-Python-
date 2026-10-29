@@ -220,3 +220,41 @@ for n in numbers:
 print("Even:", even)
 print("Odd:",odd)
 
+#  Leetcode Question 
+#  217
+#  Approach 1 : Using a dictionary
+class solution:
+    def containsDuplicate(self, nums: list[int]) -> bool:
+        frequency = {}
+        for num in nums:
+            if num in frequency:
+                return True
+            frequency[num] = 1
+        return False
+
+#  Leetcode 242 - Valid Anagram
+#  Approach : Using a dictionary
+class solution:
+    def isAnagram(self, s:str, t:str) -> bool:
+        if len(s) != len(t):
+            return False
+        freq = {}
+        for ch in s:
+            freq[ch] = freq.get(ch, 0) + 1
+        for ch in t:
+            if ch not in freq:
+                return False
+            freq[ch] -= 1
+            if freq[ch] < 0:
+                return False
+        return True
+
+#  Leetcode 1
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        seen = {}
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in seen:
+                return [seen[complement], i]
+            seen[num] = i
