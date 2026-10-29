@@ -110,3 +110,100 @@ frequency = {}
 for char in text:
     frequency[char] = frequency.get(char, 0) + 1
 print(frequency)
+
+#  Find the Highest Marks
+marks = {
+    "Aman": 86,
+    "Riya": 50,
+    "Karan": 69,
+    "Neha": 92
+}
+topper = max(marks, key=marks.get)
+print("Topper:", topper)
+print("Marks:", marks[topper])
+
+# Filter students scoring above 75
+marks = {
+    "Aman": 72,
+    "Riya": 50,
+    "Karan": 79,
+    "Neha": 92
+}
+for name, score in marks.items():
+    if score > 75:
+        print(name, score)
+
+#  Dictionary Cmprehension
+numbers = [1,2,3,4,5]
+squares = {n:n**2 for n in numbers}
+print(squares)
+
+#  Intermediate Code
+#  Count word frequency
+sentence = "python is easy and python is useful"
+words = sentence.split()
+frequency={}
+
+for word in words:
+    frequency[word] = frequency.get(word, 0) + 1
+print(frequency)
+
+#  Student marks analysis
+marks = {
+    "Aman": 86,
+    "Riya": 50,
+    "Karan": 69,
+    "Neha": 92  
+}
+total = sum(marks.values())
+average = total/len(marks)
+print("Total:", total)
+print("Average:", average)
+print("Highest:", max(marks.values()))
+print("Lowest:", min(marks.values()))
+
+#  Merge two dictionaries
+a = {"Maths": 80, "Python": 90}
+b = {"SQL": 85, "English": 75}
+merged = {**a, **b}
+print(merged)
+
+#  Count Frequency of numbers
+numbers = [1,2,2,3,3,3,4,4,5]
+freq = {}
+for n in numbers:
+    freq[n] = freq.get(n,0) + 1
+print(freq)
+
+# find the number with the lowest marks
+marks = {
+    "Aman": 86,
+    "Riya": 50,
+    "Karan": 69,
+    "Neha": 92
+}
+lowest = min(marks, key=marks.get)
+print(lowest, marks[lowest])
+
+# filter values greater than 50
+data = {"A": 20, "B":70, "C": 45, "D": 90}
+result = {}
+for key, value in data.items():
+    if value > 50:
+        result[key] = value
+print(result)
+
+# Count vowels in a string
+text = "programming"
+vowels = {}
+for char in text:
+    if char in "aeiou":
+        vowels[char] = vowels.get(char, 0) + 1
+print(vowels)
+
+# Create a dictionary using two lists
+names = ["Aman", "Riya", "Karan"]
+scores = [80, 95, 75]
+result = dict(zip(names, scores))
+print(result)
+
