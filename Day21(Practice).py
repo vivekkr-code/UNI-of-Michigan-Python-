@@ -29,3 +29,22 @@ fruits = ("apples", "banana", "mango","orange")
 for fruit in fruits:
     print(fruit)
 
+# Check if element exists
+
+t = (10, 20, 30, 40)
+if 20 in t:
+    print("Found")
+else:
+    print("Not Found")
+
+#### Convert list into tuple
+numbers = [10, 20, 30, 40]
+t = tuple(numbers)
+print(t)
+
+# Conctenate Two Value
+t1 = (1, 2, 3)
+t2 = (4, 5, 6)
+t3 = t1 + t2
+print(t3)
+
