@@ -48,3 +48,35 @@ t2 = (4, 5, 6)
 t3 = t1 + t2
 print(t3)
 
+#  Find Maximum and mininum
+
+numbers = (45, 12, 78, 23, 90)
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+
+# Nested tuple
+t = ((1,2), (3,4), (5,6))
+print(t[0])
+print(t[1][1])
+print(t[2][0])
+
+#  Remove  an element from tuple
+t = (10, 20, 30, 40)
+lst = list(t)
+lst.remove(20)
+t= tuple(lst)
+print(t)
+
+#  Important question 
+#  1. Find the second largest elements
+t = (10, 20, 30, 40,)
+unique = set(t)
+unique.remove(max(unique))
+
+# 2. Find the Largets and smallest elements
+t = (12, 45, 7, 89, 23)
+largest = max(t)
+smallest = min(t)
+print("largest:", largest)
+print("smallest:", smallest)
